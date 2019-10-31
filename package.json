@@ -4,9 +4,11 @@
   "description": "id-generators is small JavaScript library to generate ID with awesome Unique ID libraries.",
   "main": "lib/index.js",
   "scripts": {
-    "eslint": "xo --fix",
-    "test": "xo && mocha test/index.js",
-    "test-cov": "nyc npm run test"
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "test": "mocha test/index.js",
+    "test:cov": "nyc npm run test",
+    "test:loop": "while npm test --silent; do :; done"
   },
   "dependencies": {
     "cuid": "^2.1.6",
@@ -36,12 +38,12 @@
   "engines": {
     "node": ">=8.6.0"
   },
+  "author": "dailyrandomphoto <dailyrandomphoto@gmail.com> (https://www.dailyrandomphoto.com/)",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dailyrandomphoto/id-generators.git"
   },
-  "author": "dailyrandomphoto <dailyrandomphoto@gmail.com> (https://www.dailyrandomphoto.com/)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dailyrandomphoto/id-generators/issues"
   },
@@ -50,9 +52,12 @@
     "space": 2,
     "overrides": [
       {
-				"files": "test/*.js",
-				"envs": ["node", "mocha"]
-			}
+        "files": "test/*.js",
+        "envs": [
+          "node",
+          "mocha"
+        ]
+      }
     ]
   }
 }

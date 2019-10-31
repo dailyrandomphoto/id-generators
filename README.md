@@ -96,10 +96,10 @@ Copyright (c) 2019 dailyrandomphoto. Licensed under the [MIT license][license-ur
 [dependencies-url]: https://david-dm.org/dailyrandomphoto/id-generators
 [devDependencies-url]: https://david-dm.org/dailyrandomphoto/id-generators?type=dev
 
-[npm-downloads-image]: https://img.shields.io/npm/dm/id-generators.svg
-[npm-version-image]: https://img.shields.io/npm/v/id-generators.svg
-[license-image]: https://img.shields.io/npm/l/id-generators.svg
-[travis-image]: https://img.shields.io/travis/dailyrandomphoto/id-generators/master
-[coveralls-image]: https://coveralls.io/repos/github/dailyrandomphoto/id-generators/badge.svg?branch=master
-[dependencies-image]: https://david-dm.org/dailyrandomphoto/id-generators/status.svg
-[devDependencies-image]: https://david-dm.org/dailyrandomphoto/id-generators/dev-status.svg
+[npm-downloads-image]: https://img.shields.io/npm/dm/id-generators
+[npm-version-image]: https://img.shields.io/npm/v/id-generators
+[license-image]: https://img.shields.io/npm/l/id-generators
+[travis-image]: https://img.shields.io/travis/dailyrandomphoto/id-generators
+[coveralls-image]: https://img.shields.io/coveralls/github/dailyrandomphoto/id-generators
+[dependencies-image]: https://img.shields.io/david/dailyrandomphoto/id-generators
+[devDependencies-image]: https://img.shields.io/david/dev/dailyrandomphoto/id-generators
