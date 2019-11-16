@@ -1,6 +1,6 @@
 {
   "name": "id-generators",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "id-generators is small JavaScript library to generate ID with awesome Unique ID libraries.",
   "main": "lib/index.js",
   "scripts": {
@@ -16,9 +16,14 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "id-generators": "file:.",
     "mocha": "^6.2.1",
+    "nanoid-good": "^1.3.0",
     "nyc": "^14.1.1",
     "xo": "^0.25.3"
+  },
+  "peerDependencies": {
+    "nanoid-good": "^1.3.0"
   },
   "keywords": [
     "generate",
