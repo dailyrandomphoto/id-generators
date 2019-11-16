@@ -1,7 +1,7 @@
 'use strict';
 
 const {expect} = require('chai');
-const generators = require('../lib');
+const generators = require('id-generators');
 
 describe('id-generators', () => {
   it('should throw an error when register with an invalid argument', () => {
@@ -88,9 +88,15 @@ describe('id-generators', () => {
     it('should return a string with length is 21', () => {
       const generator = generators.get('nanoid');
       generator.should.be.a('function');
-      const gen = generator({});
+      let gen = generator({});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(21);
+
+      gen = generator();
+      gen.should.be.a('function');
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(21);
     });
@@ -106,13 +112,47 @@ describe('id-generators', () => {
     });
   });
 
+  describe('nanoid-good', () => {
+    it('should return a string with length is 21', () => {
+      const generator = generators.get('nanoid-good');
+      generator.should.be.a('function');
+      let gen = generator({});
+      gen.should.be.a('function');
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(21);
+
+      gen = generator();
+      gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(21);
+    });
+
+    it('should return a string with a custom length', () => {
+      const generator = generators.get('nanoid-good');
+      generator.should.be.a('function');
+      const gen = generator({size: 18});
+      gen.should.be.a('function');
+      const id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+    });
+  });
+
   describe('nanoid-simple', () => {
     it('should return a string with length is 24', () => {
       const generator = generators.get('nanoid-simple');
       generator.should.be.a('function');
-      const gen = generator({});
+      let gen = generator({});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(24);
+
+      gen = generator();
+      gen.should.be.a('function');
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(24);
     });
@@ -128,19 +168,81 @@ describe('id-generators', () => {
     });
   });
 
+  describe('nanoid-simple-good', () => {
+    it('should return a string with length is 24', () => {
+      const generator = generators.get('nanoid-simple-good');
+      generator.should.be.a('function');
+      let gen = generator({});
+      gen.should.be.a('function');
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(24);
+
+      gen = generator();
+      gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(24);
+    });
+
+    it('should return a string with a custom length', () => {
+      const generator = generators.get('nanoid-simple-good');
+      generator.should.be.a('function');
+      const gen = generator({size: 18});
+      gen.should.be.a('function');
+      const id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+    });
+  });
+
   describe('nanoid-lowercase', () => {
     it('should return a string with length is 26', () => {
       const generator = generators.get('nanoid-lowercase');
       generator.should.be.a('function');
-      const gen = generator({});
+      let gen = generator({});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(26);
+
+      gen = generator();
+      gen.should.be.a('function');
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(26);
     });
 
     it('should return a string with a custom length', () => {
       const generator = generators.get('nanoid-lowercase');
+      generator.should.be.a('function');
+      const gen = generator({size: 18});
+      gen.should.be.a('function');
+      const id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+    });
+  });
+
+  describe('nanoid-lowercase-good', () => {
+    it('should return a string with length is 26', () => {
+      const generator = generators.get('nanoid-lowercase-good');
+      generator.should.be.a('function');
+      let gen = generator({});
+      gen.should.be.a('function');
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(26);
+
+      gen = generator();
+      gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(26);
+    });
+
+    it('should return a string with a custom length', () => {
+      const generator = generators.get('nanoid-lowercase-good');
       generator.should.be.a('function');
       const gen = generator({size: 18});
       gen.should.be.a('function');
