@@ -52,10 +52,10 @@ nanoid /<br>nanoid-good | 21 | `A-Za-z0-9_-` | size/21 | use [`nanoid()`](https:
 nanoid-simple /<br>nanoid-simple-good | 24 | `a-z0-9` | size/24 | use [`nanoid/generate`](https://github.com/ai/nanoid) or [`nanoid-good/generate`](https://github.com/y-gagar1n/nanoid-good) generated string. <br>e.g. `pfldm3gg8h9psydphotqe71d`
 nanoid-lowercase /<br>nanoid-lowercase-good | 26 | `a-z` | size/26 | use [`nanoid/generate`](https://github.com/ai/nanoid) or  [`nanoid-good/generate`](https://github.com/y-gagar1n/nanoid-good) generated string. <br>e.g. `jsjxoibprplrdoitjmppotjrnm`
 
-> If use `nanoid-good` or `nanoid-xxx-good`, you should install `nano-good` manually.
+> If use `nanoid-good` or `nanoid-xxx-good`, you should install `nanoid-good` manually.
 >
 > ```sh
-> npm install nano-good
+> npm install nanoid-good
 > ```
 
 ## Define Custom Generators
