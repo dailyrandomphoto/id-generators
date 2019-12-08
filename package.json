@@ -1,6 +1,6 @@
 {
   "name": "id-generators",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "id-generators is small JavaScript library to generate ID with awesome Unique ID libraries.",
   "main": "lib/index.js",
   "scripts": {
