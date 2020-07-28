@@ -94,8 +94,16 @@ describe('id-generators', () => {
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(21);
 
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(21);
+
       gen = generator();
       gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(21);
+
       id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(21);
@@ -106,7 +114,11 @@ describe('id-generators', () => {
       generator.should.be.a('function');
       const gen = generator({size: 18});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(18);
     });
@@ -122,8 +134,16 @@ describe('id-generators', () => {
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(21);
 
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(21);
+
       gen = generator();
       gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(21);
+
       id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(21);
@@ -134,7 +154,11 @@ describe('id-generators', () => {
       generator.should.be.a('function');
       const gen = generator({size: 18});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(18);
     });
@@ -150,8 +174,16 @@ describe('id-generators', () => {
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(24);
 
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(24);
+
       gen = generator();
       gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(24);
+
       id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(24);
@@ -162,7 +194,11 @@ describe('id-generators', () => {
       generator.should.be.a('function');
       const gen = generator({size: 18});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(18);
     });
@@ -178,8 +214,16 @@ describe('id-generators', () => {
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(24);
 
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(24);
+
       gen = generator();
       gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(24);
+
       id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(24);
@@ -190,7 +234,11 @@ describe('id-generators', () => {
       generator.should.be.a('function');
       const gen = generator({size: 18});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(18);
     });
@@ -206,8 +254,16 @@ describe('id-generators', () => {
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(26);
 
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(26);
+
       gen = generator();
       gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(26);
+
       id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(26);
@@ -218,7 +274,11 @@ describe('id-generators', () => {
       generator.should.be.a('function');
       const gen = generator({size: 18});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(18);
     });
@@ -234,8 +294,16 @@ describe('id-generators', () => {
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(26);
 
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(26);
+
       gen = generator();
       gen.should.be.a('function');
+      id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(26);
+
       id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(26);
@@ -246,7 +314,11 @@ describe('id-generators', () => {
       generator.should.be.a('function');
       const gen = generator({size: 18});
       gen.should.be.a('function');
-      const id = gen();
+      let id = gen();
+      console.log('      ID: ' + id);
+      id.should.be.a('string').have.lengthOf(18);
+
+      id = gen();
       console.log('      ID: ' + id);
       id.should.be.a('string').have.lengthOf(18);
     });
