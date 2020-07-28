@@ -4,8 +4,8 @@
   "description": "id-generators is small JavaScript library to generate ID with awesome Unique ID libraries.",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "xo",
-    "lint:fix": "xo --fix",
+    "lint": "prettier --write . && xo",
+    "lint:fix": "prettier --write . && xo --fix",
     "test": "mocha test/index.js",
     "test:cov": "nyc npm run test",
     "test:loop": "while npm test --silent; do :; done"
@@ -20,7 +20,8 @@
     "mocha": "^8.0.1",
     "nanoid-good": "^1.3.0",
     "nyc": "^15.1.0",
-    "xo": "^0.32.1"
+    "prettier": "latest",
+    "xo": "latest"
   },
   "peerDependencies": {
     "nanoid-good": "^1.3.0"
@@ -55,6 +56,11 @@
   "homepage": "https://github.com/dailyrandomphoto/id-generators#readme",
   "xo": {
     "space": 2,
+    "prettier": true,
+    "rules": {
+      "promise/prefer-await-to-then": 0,
+      "capitalized-comments": 0
+    },
     "overrides": [
       {
         "files": "test/*.js",

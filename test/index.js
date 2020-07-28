@@ -1,11 +1,13 @@
 'use strict';
 
-const {expect} = require('chai');
+const { expect } = require('chai');
 const generators = require('id-generators');
 
 describe('id-generators', () => {
   it('should throw an error when register with an invalid argument', () => {
-    expect(() => generators.register('invalid', 'not a function')).to.throw(TypeError);
+    expect(() => generators.register('invalid', 'not a function')).to.throw(
+      TypeError
+    );
   });
 
   it('should throw an error when register with an already registered key', () => {
@@ -27,18 +29,18 @@ describe('id-generators', () => {
   });
 
   it('should use option in the custom function', () => {
-    generators.register('my_custom_path', option => {
+    generators.register('my_custom_path', (option) => {
       option = option || {};
       const size = option.size || 8;
       const prefix = option.prefix || 'items-';
       return function (title) {
-        return prefix + title.toLowerCase().replace(/[^\w]/g, '').slice(0, size);
+        return prefix + title.toLowerCase().replace(/\W/g, '').slice(0, size);
       };
     });
 
     const generator = generators.get('my_custom_path');
     generator.should.be.a('function');
-    const gen = generator({size: 6});
+    const gen = generator({ size: 6 });
     gen.should.be.a('function');
     const id = gen('Hello World!');
     console.log('      ID: ' + id);
@@ -112,7 +114,7 @@ describe('id-generators', () => {
     it('should return a string with a custom length', () => {
       const generator = generators.get('nanoid');
       generator.should.be.a('function');
-      const gen = generator({size: 18});
+      const gen = generator({ size: 18 });
       gen.should.be.a('function');
       let id = gen();
       console.log('      ID: ' + id);
@@ -152,7 +154,7 @@ describe('id-generators', () => {
     it('should return a string with a custom length', () => {
       const generator = generators.get('nanoid-good');
       generator.should.be.a('function');
-      const gen = generator({size: 18});
+      const gen = generator({ size: 18 });
       gen.should.be.a('function');
       let id = gen();
       console.log('      ID: ' + id);
@@ -192,7 +194,7 @@ describe('id-generators', () => {
     it('should return a string with a custom length', () => {
       const generator = generators.get('nanoid-simple');
       generator.should.be.a('function');
-      const gen = generator({size: 18});
+      const gen = generator({ size: 18 });
       gen.should.be.a('function');
       let id = gen();
       console.log('      ID: ' + id);
@@ -232,7 +234,7 @@ describe('id-generators', () => {
     it('should return a string with a custom length', () => {
       const generator = generators.get('nanoid-simple-good');
       generator.should.be.a('function');
-      const gen = generator({size: 18});
+      const gen = generator({ size: 18 });
       gen.should.be.a('function');
       let id = gen();
       console.log('      ID: ' + id);
@@ -272,7 +274,7 @@ describe('id-generators', () => {
     it('should return a string with a custom length', () => {
       const generator = generators.get('nanoid-lowercase');
       generator.should.be.a('function');
-      const gen = generator({size: 18});
+      const gen = generator({ size: 18 });
       gen.should.be.a('function');
       let id = gen();
       console.log('      ID: ' + id);
@@ -312,7 +314,7 @@ describe('id-generators', () => {
     it('should return a string with a custom length', () => {
       const generator = generators.get('nanoid-lowercase-good');
       generator.should.be.a('function');
-      const gen = generator({size: 18});
+      const gen = generator({ size: 18 });
       gen.should.be.a('function');
       let id = gen();
       console.log('      ID: ' + id);
