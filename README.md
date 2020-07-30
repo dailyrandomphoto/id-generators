@@ -3,9 +3,7 @@
 [![NPM Version][npm-version-image]][npm-url]
 [![LICENSE][license-image]][license-url]
 [![Build Status][travis-image]][travis-url]
-[![Coverage Status][coveralls-image]][coveralls-url]
-[![dependencies Status][dependencies-image]][dependencies-url]
-[![devDependencies Status][devdependencies-image]][devdependencies-url]
+[![code style: prettier][code-style-prettier-image]][code-style-prettier-url]
 
 **id-generators** is small JavaScript library to generate ID with awesome Unique ID libraries.
 
@@ -104,14 +102,10 @@ Copyright (c) 2019 [dailyrandomphoto][my-url]. Licensed under the [MIT license][
 [my-url]: https://github.com/dailyrandomphoto
 [npm-url]: https://www.npmjs.com/package/id-generators
 [travis-url]: https://travis-ci.org/dailyrandomphoto/id-generators
-[coveralls-url]: https://coveralls.io/github/dailyrandomphoto/id-generators?branch=master
 [license-url]: LICENSE
-[dependencies-url]: https://david-dm.org/dailyrandomphoto/id-generators
-[devdependencies-url]: https://david-dm.org/dailyrandomphoto/id-generators?type=dev
+[code-style-prettier-url]: https://github.com/prettier/prettier
 [npm-downloads-image]: https://img.shields.io/npm/dm/id-generators
 [npm-version-image]: https://img.shields.io/npm/v/id-generators
 [license-image]: https://img.shields.io/npm/l/id-generators
 [travis-image]: https://img.shields.io/travis/dailyrandomphoto/id-generators
-[coveralls-image]: https://img.shields.io/coveralls/github/dailyrandomphoto/id-generators
-[dependencies-image]: https://img.shields.io/david/dailyrandomphoto/id-generators
-[devdependencies-image]: https://img.shields.io/david/dev/dailyrandomphoto/id-generators
+[code-style-prettier-image]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
