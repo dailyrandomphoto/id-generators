@@ -19,14 +19,14 @@
     "chai": "^4.2.0",
     "id-generators": "file:.",
     "mocha": "^8.0.1",
-    "nanoid-good": "^1.3.0",
+    "nanoid-good": "^3.1.0",
     "nyc": "^15.1.0",
     "prettier": "latest",
     "unlink-self": "latest",
     "xo": "latest"
   },
   "peerDependencies": {
-    "nanoid-good": "^1.3.0"
+    "nanoid-good": "^3.1.0"
   },
   "keywords": [
     "generate",
